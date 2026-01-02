@@ -38,7 +38,7 @@ export default function Hero() {
           className="mt-10 flex justify-center gap-4"
         >
           <Link
-            href="/products"
+            href="/products/upload"
             className="rounded-full bg-white text-black px-8 py-3 text-sm font-medium hover:bg-neutral-200 transition"
           >
             Explore Products

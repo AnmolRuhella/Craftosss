@@ -1,24 +1,35 @@
 "use client";
 
-import Loader from "@/component/Common/Loader";
-import { useProducts } from "./hooks/useProduct";
+import { motion } from "framer-motion";
 import ProductCard from "./ProductCard.";
+import { useProducts } from "./hooks/useProduct";
 
-
-
-export default function ProductsPage() {
+export default function FeaturedProducts() {
   const { products, loading } = useProducts();
 
-  if (loading) return <Loader />;
+  if (loading) return null;
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
-      <h2 className="text-3xl font-bold mb-8">Our Products</h2>
-      <div className="grid md:grid-cols-3 gap-8">
-        {products.map(p => (
-          <ProductCard key={p.id} product={p} />
-        ))}
-      </div>
-    </div>
+    <section className="max-w-7xl mx-auto px-6 py-24">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        <h2 className="text-3xl font-semibold mb-4">
+          Featured Creations
+        </h2>
+        <p className="text-[rgb(var(--muted))] mb-12 max-w-xl">
+          A curated selection of our finest handmade pieces.
+        </p>
+
+        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+          {products.slice(0, 3).map(product => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      </motion.div>
+    </section>
   );
 }
