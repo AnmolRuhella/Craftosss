@@ -1,6 +1,6 @@
 "use client";
 
-import Loader from "@/src/component/Common/Loader";
+import Loader from "@/component/Common/Loader";
 import { useProducts } from "./hooks/useProduct";
 import ProductCard from "./ProductCard.";
 

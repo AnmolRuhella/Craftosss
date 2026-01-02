@@ -1,4 +1,5 @@
-import HomePage from "@/src/features/products/components/HomePage";
+import HomePage from "@/features/products/components/HomePage";
+
 
 
 export default function Page() {

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Hero from "./Hero";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       >
         View Products
       </Link>
+        <Hero />
     </section>
   );
 }

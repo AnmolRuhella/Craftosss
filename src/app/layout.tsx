@@ -1,6 +1,7 @@
-
+import "../../src/styles/theme.css"
 import Navbar from "../component/Layout/Navbar";
 import Footer from "../component/Layout/Footer";
+
 
 export default function RootLayout({
   children,
@@ -9,10 +10,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-stone-50 text-stone-800">
+      <body>
         <Navbar />
         <main>{children}</main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
