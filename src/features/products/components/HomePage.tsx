@@ -10,7 +10,7 @@ export default function HomePage() {
       </p>
       <Link
         href="/products"
-        className="bg-black text-white px-6 py-3 rounded"
+        className=" text-white px-6 py-3 rounded"
       >
         View Products
       </Link>
