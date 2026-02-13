@@ -4,15 +4,15 @@
 
 @layer base {
   :root {
-    --bg: 15 15 15;
-    --card: 22 22 22;
-    --border: 38 38 38;
-    --text: 240 240 240;
-    --muted: 160 160 160;
-    --accent: 99 102 241;
+    --bg: 255 255 255;
+    --card: 255 255 255;
+    --border: 229 231 235;
+    --text: 17 24 39;
+    --muted: 107 114 128;
   }
 
   body {
-    @apply bg-[rgb(var(--bg))] text-[rgb(var(--text))];
+    background-color: rgb(var(--bg));
+    color: rgb(var(--text));
   }
 }
