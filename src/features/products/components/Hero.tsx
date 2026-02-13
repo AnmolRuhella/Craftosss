@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -51,6 +52,13 @@ export default function Hero() {
             Our Story
           </Link>
         </motion.div>
+
+        <Button
+        variant="ghost"
+        size = "lg"
+        className="m-5"
+        >Test Button</Button>
+
       </div>
     </section>
   );

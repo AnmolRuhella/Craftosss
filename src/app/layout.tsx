@@ -1,7 +1,11 @@
-import "../../src/styles/theme.css"
-import Navbar from "../component/Layout/Navbar";
-import Footer from "../component/Layout/Footer";
+import Navbar from "@/component/Layout/Navbar";
+import "@/styles/theme.css"
+import "@/styles/globals.css"
 
+export const metadata = {
+  title: "Craftoss - Handcrafted Excellence",
+  description: "Premium handcrafted products made with love",
+};
 
 export default function RootLayout({
   children,
@@ -9,11 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body>
         <Navbar />
-        <main>{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );
