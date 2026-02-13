@@ -237,4 +237,4 @@ Then visit:
 - **Products Gallery:** http://localhost:3000/product
 - **Upload Product:** http://localhost:3000/products/upload
 
-Happy crafting! ✨
+Happy crafting!
